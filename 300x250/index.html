@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="ad.size" content="width=300,height=250" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>300x250</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div id="logo" class="absolute top-0 left-0 w-full h-full logo"></div>
+    <div id="line1" class="absolute top-0 left-0 w-full h-full text1">
+      Win with
+    </div>
+    <div id="line2" class="absolute top-0 left-0 w-full h-full text1">
+      styla.
+    </div>
+    <div id="terms" class="absolute top-0 left-0 w-full h-full text7">
+      *T&C’s apply
+    </div>
+
+    <div id="image1" class="absolute top-0 right-0 h-full image1"></div>
+    <div id="circle1" class="absolute top-0 left-0 w-full h-full circle">
+      <div class="absolute top-0 left-0 w-full h-full ctext">
+        WIN AN <br /> ALL INCLUSIVE <br /> RETREAT STAY <br /> VALUED AT <br /> <span class="amount">$5,550* </span> <br /><span class="term">*T&C’s apply</span>
+      </div> 
+    </div>
+
+    <div id="image2" class="absolute top-0 right-0 h-full image2"></div>
+    <div id="circle2" class="absolute top-0 left-0 w-full h-full circle">
+      <div class="absolute top-0 left-0 w-full h-full ctext top24">
+        WIN A <br /> <span class="amount"> $1,000 </span> <br /> CASTLERY <br /> VOUCHER* <br /> <span class="term">*T&C’s apply</span>
+      </div> 
+    </div>
+    
+    <div id="image3" class="absolute top-0 right-0 h-full image3"></div>
+    <div id="circle3" class="absolute top-0 left-0 w-full h-full circle">
+      <div class="absolute top-0 left-0 w-full h-full ctext">
+        WIN A <br /> PILLOW TALK <br /> BED SET <br /> VALUED UP TO <br /> <span class="amount">$795*</span> <br /> <span class="term">*T&C’s apply</span>
+      </div> 
+    </div>
+
+    <div id="line3" class="absolute top-0 left-0 w-full h-full text7">
+      Interactive Magazine
+    </div>
+    <div id="line4" class="absolute top-0 left-0 w-full h-full text7">
+      Out Now
+    </div>
+    <div id="line5" class="absolute top-0 left-0 w-full h-full text7">
+    </div>
+    <div id="txt4" class="absolute top-0 left-0 w-full h-full text4"></div>
+
+    <div id="image4" class="absolute top-0 right-0 h-full image4"></div>
+
+    <div id="txt5" class="absolute top-0 left-0 w-full h-full text5"></div>
+    <div id="cta" class="absolute top-0 left-0 w-full h-full"></div>
+  </div>
+
+  <script>
+		document.querySelector('.app').addEventListener("click", () => {
+      window.open("", "_blank");
+    });
+		
+    gsap.timeline()
+    .from("#logo", {opacity:0, y:-250, duration:0.5},"<")
+      .from("#line1", { duration:0}, "<")
+      .from("#line2", { duration:0}, "+=1")
+      .from("#terms", { duration:0}, "+=0.25")
+      .to("#line1, #line2, #terms", {opacity:0, scale:1, ease:"back", duration:0.5},"+=1")
+
+      .from("#image1", {opacity:0, scale:1, y:-250, ease:"in", duration:0.25}, "<")
+      .from("#circle1", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .to("#circle1, #image1", {opacity:0, scale:1, ease:"back", duration:0.75},"+=3")
+
+      .from("#image2", {opacity:0, scale:1, y:-250, ease:"in", duration:0.5},"<")
+      .from("#circle2", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .to("#circle2, #image2", {opacity:0, scale:1, ease:"back", duration:0.75},"+=3")
+
+      .from("#image3", {opacity:0, scale:1, y:-250, ease:"in", duration:0.75},"<")
+      .from("#circle3", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .to("#circle3, #image3", {opacity:0, scale:1, ease:"back", duration:0.75},"+=3")
+
+      .from("#line3", { duration:0}, "<")
+      .from("#line4", { duration:0}, "+=0.25")
+      .from("#line5", { duration:0}, "<")
+      .from("#txt4", {opacity:0, duration:1}, "<")
+      .to("#txt4, #line3, #line4, #line5", {opacity:0, scale:1, ease:"back", duration:0.5},"+=1.5")
+
+      .from("#image4", {opacity:0, scale:1, y:-250, ease:"in", duration:0.75},"<")
+      .to("#image4", {opacity:0, scale:1, ease:"back", duration:0.75},"+=2")
+
+      .from("#txt5", {opacity:0, scale:1, y:-250, duration:0.75}, "<")
+      .from("#cta", {opacity:0, scale:0.9, duration:1});
+
+  </script>
+</body>
+</html>

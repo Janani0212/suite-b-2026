@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="ad.size" content="width=970,height=250" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>970x250</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div id="logo" class="absolute top-0 left-0 w-full h-full logo"></div>
+    <div id="txt1" class="absolute top-0 left-0 w-full h-full text1">Win with styla.</div>
+    <div id="terms" class="absolute top-0 left-0 w-full h-full text7">
+      *T&C’s apply
+    </div>
+
+    <div id="image1" class="absolute top-0 right-0 h-full image1"></div>
+    <div id="circle1" class="absolute top-0 left-0 w-full h-full circle">
+      <div class="absolute top-0 left-0 w-full h-full ctext top32">
+        WIN AN ALL <br /> INCLUSIVE <br />RETREAT STAY <br /> VALUED AT <br /> <span class="amount">$5,550*</span> <br /> <span class="term">*T&C’s apply</span>
+      </div> 
+    </div>
+    <div id="txt3" class="absolute top-0 left-0 w-full h-full"></div>
+
+    <div id="image2" class="absolute top-0 right-0 h-full image2"></div>
+    <div id="circle2" class="absolute top-0 left-0 w-full h-full circle">
+      <div class="absolute top-0 left-0 w-full h-full ctext">
+        WIN A <br /> <span class="amount">$1,000</span> <br /> CASTLERY <br /> VOUCHER* <br /> <span class="term">*T&C’s apply</span>
+      </div> 
+    </div>
+    <div id="txt7" class="absolute top-0 left-0 w-full h-full"></div>
+
+    <div id="image3" class="absolute top-0 right-0 h-full image3"></div>
+    <div id="circle3" class="absolute top-0 left-0 w-full h-full circle">
+      <div class="absolute top-0 left-0 w-full h-full ctext top48">
+        WIN A <br /> PILLOW TALK <br /> BED SET <br /> VALUED UP TO <br /> <span class="amount">$795*</span> <br /> <span class="term">*T&C’s apply</span>
+      </div> 
+    </div>
+    <div id="txt8" class="absolute top-0 left-0 w-full h-full text8"></div>
+
+    <div id="txt4" class="absolute top-0 left-0 w-full h-full text4"></div>
+    <div id="txt5" class="absolute top-0 left-0 w-full h-full text5"></div>
+    <div id="line3" class="absolute top-0 left-0 w-full h-full text7">
+      Interactive Magazine Out Now
+    </div>
+    <div id="line4" class="absolute top-0 left-0 w-full h-full text7">
+    </div>
+
+    <div id="image5" class="absolute top-0 right-0 h-full image5"></div>
+
+    <div id="image6" class="absolute top-0 right-0 h-full image6"></div>
+    <div id="txt6" class="absolute top-0 left-0 w-full h-full text6"></div>
+    <div id="cta" class="absolute top-0 left-0 w-full h-full"></div>
+  </div>
+
+  <script>
+    document.querySelector('.app').addEventListener("click", () => {
+      window.open("https://supacentamoorepark.com.au/styla-magazines/spring-summer-2023-24/", "_blank");
+    });
+
+    gsap.timeline()
+    .from("#logo", {opacity:0, scale:1, y:-250, duration:0.5}, "<")
+      .from("#txt1", { duration:0}, "<")
+      .from("#terms", { duration:0}, "<")
+      .to("#txt1, #terms", {opacity:0, scale:1, ease:"in", duration:0.5},"+=1.5")
+
+      .from("#circle1", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .from("#image1, #txt3", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .to("#circle1, #image1, #txt3", {opacity:0, scale:1, ease:"back", duration:0.75},"+=3")
+
+      .from("#circle2", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .from("#image2, #txt7", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .to("#circle2, #image2, #txt7", {opacity:0, scale:1, ease:"back", duration:0.75},"+=3")
+
+      .from("#circle3", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .from("#image3, #txt8", {opacity:0, scale:0.5, duration:0.25}, "-=0.25")
+      .to("#circle3, #image3, #txt8", {opacity:0, scale:1, ease:"back", duration:0.75},"+=3")
+
+      .from("#txt5", {opacity:0, duration:0.5}, "<")
+      .from("#line3", { duration:0}, "<")
+      .from("#line4", { duration:0}, "<")
+      .from("#txt4", {opacity:0, duration:0.5}, "+=0.25")
+      .to("#line3, #line4, #txt4, #txt5", {opacity:0, scale:1, ease:"in", duration:0.5},"+=1.5")
+
+      .from("#image5", {opacity:0, scale:1, y:-250, duration:0.5}, "<")
+      .to("#image5", {x:8, duration: 2, ease: "back"},"+=1.5")
+
+      .from("#image6", {opacity:0, scale:1, y:-250, duration:0.5}, "<")
+      .from("#txt6", {opacity:0, duration:0.5}, "<")
+      .from("#cta", {opacity:0, scale:0.8, duration:1}, "<");
+
+  </script>
+</body>
+</html>

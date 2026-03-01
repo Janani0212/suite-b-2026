@@ -1,0 +1,226 @@
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 250px;
+  background: #edeae5;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.logo {
+  background: url('../img/logo_2x.png') center no-repeat;
+  z-index: 6;
+  width: 91%;
+  background-size: contain;
+}
+#line3{
+  padding-top: 60px;
+  left: 50%;
+  animation: type 0.75s steps(60, end); 
+  animation-delay: 13.10s;
+  animation-fill-mode: forwards; 
+}
+#line4{
+  border-bottom: 1px solid #404145;
+  padding-top: 117px;
+  left: 50%;
+  height: 1px;
+  width: 445px;
+  animation: type 0.75s steps(60, end); 
+  animation-delay: 13.15s;
+  animation-fill-mode: forwards; 
+}
+#terms{
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  top: 75%;
+  left: 55%;
+  font-size: 12px;
+  animation: type 0.75s steps(60, end); 
+  animation-delay: 0.95s;
+  animation-fill-mode: forwards; 
+}
+.text7 {
+  position: absolute;
+  line-height: 54px;
+  color: #404145;  
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  visibility: hidden;
+  width: 100%;
+  animation: type 1s steps(60, end); 
+  animation-fill-mode: forwards; 
+}
+.image1 {
+  background: url('../img/image1_2x.jpg') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 970px;
+}
+.image2 {
+  background: url('../img/image2_2x.jpg') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 970px;
+}
+.image3 {
+  background: url('../img/image3_2x.jpg') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 970px;
+}
+.image5 {
+  background: url('../img/image5_2x.jpg') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 970px;
+  left: 0;
+}
+.image6 {
+  background: url('../img/image6_2x.jpg') center no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 970px;
+  left: 0;
+}
+.text1 {
+  font-family: 'Prata', serif;
+  color: #404145;
+  padding-top: 82px;
+  font-size: 76px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  left: 32%;
+  visibility: hidden;
+  animation: type 1s steps(60, end); 
+  animation-fill-mode: forwards; 
+}
+@keyframes type{ 
+  from { width: 0px; visibility: visible; opacity: 0.2; } 
+  to{visibility: visible;}
+}
+
+#txt3 {
+  background: url('../img/txt3_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+#txt4 {
+  background: url('../img/txt4_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+#txt5 {
+  background: url('../img/txt5_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+#txt6 {
+  background: url('../img/txt6_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+#txt7 {
+  background: url('../img/txt7_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+#txt8 {
+  background: url('../img/txt8_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+#cta{
+  background: url('../img/cta_2x.png') center no-repeat;
+  background-size: 100% 100%;
+}
+.text{
+  color: #404145;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+.circle{
+  background: #1763af;
+  height: 213px;
+  width: 213px;
+  border-radius: 50%;
+  z-index: 1;
+  top: 18px;
+  left: 559px;
+}
+.ctext{
+  font-weight: 400;
+  position: absolute;
+  line-height: 30px;
+  color: #ffffff;  
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  top: 22px;
+}
+#circle2{
+  left: 552px;
+}
+#circle2 > div.ctext{
+  top: 38px;
+}
+.amount{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+}
+.term{
+  font-size: 11px;
+  font-style: italic;
+  display: inline-block;
+}
+
+.top32{
+  top: 22px;
+}
+.top48{
+  top: 34px;
+  line-height: 26px;
+}
+#circle2{
+  z-index: 2;
+}
+#circle3{
+  z-index: 3;
+  left: 552px;
+}
+#circle3 .term{
+padding-top: 10px;
+}
