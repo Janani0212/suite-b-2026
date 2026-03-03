@@ -182,24 +182,33 @@
 .ctext{
   font-weight: 400;
   position: absolute;
-  line-height: 30px;
+  line-height: 26px;
   color: #ffffff;  
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   top: 22px;
+  letter-spacing: 0.1em;
 }
 #circle2{
   left: 552px;
 }
 #circle2 > div.ctext{
-  top: 38px;
+  top: 46px;
 }
 .amount{
   font-size: 22px;
   color: #fff;
   font-weight: 600;
   display: inline-block;
+}
+.ctext sup{
+  vertical-align: text-bottom;
+  font-size: 13px;
+}
+.amount sup{
+  vertical-align: text-top;
+  font-size: 16px;
 }
 .term{
   font-size: 11px;
@@ -208,7 +217,7 @@
 }
 
 .top32{
-  top: 22px;
+  top: 32px;
 }
 .top48{
   top: 34px;
@@ -220,7 +229,4 @@
 #circle3{
   z-index: 3;
   left: 552px;
-}
-#circle3 .term{
-padding-top: 10px;
 }

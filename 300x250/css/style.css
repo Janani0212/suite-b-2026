@@ -169,12 +169,13 @@
 .ctext{
   font-weight: 400;
   position: absolute;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;  
   font-family: 'Poppins', sans-serif;
   font-size: 12.5px;
   text-align: center;
-  top: 15px;
+  top: 13px;
+  letter-spacing: 0.1em;
 }
 
 #circle2{
@@ -186,25 +187,30 @@
 }
 
 .amount{
-  font-size: 22px;
+  font-size: 21px;
   color: #fff;
   font-weight: 600;
-  padding: 6px 0;
   display: inline-block;
+}
+.ctext sup{
+  vertical-align: text-bottom;
+  font-size: 13px;
+}
+.amount sup{
+  vertical-align: text-top;
+  font-size: 16px;
 }
 .term{
   font-size: 11px;
   font-style: italic;
   display: inline-block;
+  letter-spacing: 0;
 }
 
 #circle2 .term{
   margin-top: 12px;
 }
 
-#circle3 .term{
-  padding-top: 5px;
-}
 #circle3 .ctext {
   top: 12px;
 }
